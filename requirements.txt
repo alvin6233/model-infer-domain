@@ -1,0 +1,6 @@
+mmcv==2.0.0
+mmpretrain
+mmpretrain[multimodal]
+mmengine
+
+python-multipart
