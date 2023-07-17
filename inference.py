@@ -1,6 +1,6 @@
 
 from PIL import Image
-
+from openxlab.model import inference
 import numpy as np
 import time
 
