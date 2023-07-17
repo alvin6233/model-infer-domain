@@ -1,17 +1,12 @@
 from PIL import Image
-from openxlab.model import inference
 import numpy as np
 import time
 
 from mmpretrain.apis import ImageClassificationInferencer
 
-# print('初始化延迟2分钟')
-# time.sleep(120)
-# print('初始化延迟2分钟结束')
-try:
-    result = inference("meijiawen1/test-image", ["./demo_text_ocr.jpg"])
-except Exception as e:
-    print(f'error:{e}')
+print('初始化延迟2分钟')
+time.sleep(120)
+print('初始化延迟2分钟结束')
 model_name = "resnet50_8xb32_in1k"
 image_inferencer = ImageClassificationInferencer(model_name)
 
